@@ -1,0 +1,37 @@
+# Analysis settings (fixed before execution; see docs/methodology.md).
+analysis:
+  project: "Cladosporium sphaerospermum immunoinformatics"
+  blueprint: "Cladosporium_Immunoinformatics_Project_Blueprint.txt (Parts 1-19)"
+  local_only: true
+  no_github: true
+
+peptides:
+  mhci_lengths: [8, 9, 10, 11]
+  mhcii_length: 15
+  step: 1                     # overlapping windows, no gaps
+
+human_reference:
+  dataset: UniProtKB/Swiss-Prot
+  release: "2026_04"
+  records: 20429
+  checksum_sha256: "13852e1743..."  # full digest in data/manifests/data_checksums.txt
+  ambiguous_residues: "25 records contain U; handled as X"
+
+iedb:
+  primary_method: BA          # binding affinity; selected in D-05/D-06
+  el_sensitivity_leg: not_run # documented; BA-only is the prespecified primary
+  retrieval_date: 2026-11-14
+  raw_preservation: "byte-identical responses + per-call sha256 in results/logs/"
+
+conservation:
+  method: "NCBI eutils exact-containment (no MAFFT available on machine)"
+  within_species_vs_across: "reported separately"
+  c_sphaerospermum_homologs: 0
+  note: "all 6 C. sphaerospermum genome assemblies are un-annotated -> denominator 0"
+
+population_coverage:
+  status: not_evaluated
+  reason: "legacy tools_api/population/ returns 403; nextgen POST /pipeline returns 405"
+
+sensitivity:
+  scenarios: [PRIMARY, STRICT, LENIENT, RANK05, NO_DQ, NO_DRB101, CLASS_I_ONLY, CLASS_II_ONLY]

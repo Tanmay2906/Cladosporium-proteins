@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cladosporium-immunoinformatics"
+version = "0.1.0"
+description = "Core pipeline utilities for the Cladosporium sphaerospermum immunoinformatics project (sequence validation, peptide generation, output validation, prediction-stage scaffolds)."
+requires-python = ">=3.10"
+dependencies = [
+    "biopython==1.88",
+    "pandas==3.1.1",
+    "numpy==2.5.4",
+    "requests==2.34.2",
+    "pyyaml==6.0.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.2"]
+
+[project.scripts]
+validate-sequences = "validate_sequences:main"
+verify-target-metadata = "verify_target_metadata:main"
+characterize-proteins = "characterize_proteins:main"
+generate-peptides = "generate_peptides:main"
+validate-outputs = "validate_outputs:main"
+mhci-predictions = "run_mhci_predictions:main"
+mhcii-predictions = "run_mhcii_predictions:main"
+parse-epitope-predictions = "parse_epitope_predictions:main"
+bcell-predictions = "run_bcell_predictions:main"
+screen-candidates = "screen_candidates:main"
+analyze-conservation = "analyze_conservation:main"
+validate-population-coverage = "validate_population_coverage:main"
+prioritize-candidates = "prioritize_candidates:main"
+sensitivity-analysis = "sensitivity_analysis:main"
+
+[tool.setuptools]
+package-dir = { "" = "src/python" }
+py-modules = [
+    "validate_sequences",
+    "verify_target_metadata",
+    "characterize_proteins",
+    "generate_peptides",
+    "validate_outputs",
+    "run_mhci_predictions",
+    "run_mhcii_predictions",
+    "parse_epitope_predictions",
+    "run_bcell_predictions",
+    "screen_candidates",
+    "analyze_conservation",
+    "validate_population_coverage",
+    "prioritize_candidates",
+    "sensitivity_analysis",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

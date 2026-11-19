@@ -1,0 +1,2 @@
+tool,parameters,input_peptides,input_homologs,retrieval_date
+NCBI eutils (exact-containment),no MSA (MAFFT unavailable); exact substring matching,1849,59,2026-11-14

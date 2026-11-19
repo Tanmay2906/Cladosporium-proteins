@@ -1,0 +1,28 @@
+# Target configuration (blueprint Part 1/2).
+# Only proteins with verified C. sphaerospermum evidence are analysis targets.
+# The SOD1 homolog from C. halotolerans is REFERENCE ONLY and is never treated
+# as C. sphaerospermum evidence in any derived table or figure.
+targets:
+  - target_id: PKS1
+    accession: QBZ73626.1
+    source: UniProtKB
+    organism: Cladosporium sphaerospermum
+    status: C_sphaerospermum_verified
+    description: "partial type III polyketide synthase (isolate DWEL1, MK213995.1)"
+    length_aa: 235
+    evidence: "UniProtKB exact match; GenBank MK213995.1; only verified C. sphaerospermum protein found"
+    raw_fasta: data/raw/PKS1.fasta
+  - target_id: SOD1REF
+    accession: A0AB34KRD1
+    source: UniProtKB
+    organism: Cladosporium halotolerans
+    status: REFERENCE_ONLY_NOT_C_sphaerospermum
+    description: "superoxide dismutase [Cu-Zn] homolog (reference strain)"
+    length_aa: 154
+    evidence: "no C. sphaerospermum SOD1 record exists in UniProt/NCBI/local screens"
+    raw_fasta: data/raw/SOD1.fasta
+
+no_c_sphaerospermum_sod1: >-
+  Exhaustive screens (UniProtKB REST, NCBI eutils, local FASTA) returned zero
+  C. sphaerospermum SOD1 records; the C. halotolerans homolog is carried as
+  reference-only context (see docs/limitations.md).

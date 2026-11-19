@@ -1,0 +1,43 @@
+# IEDB prediction method configuration.
+# Methods/versions follow IEDB tools-API documentation (tools.iedb.org/main/tools-api/).
+# IEDB recommended binding methods (2023.09 onwards):
+#   MHC-I:  netmhcpan_ba  (NetMHCpan 4.1 BA)
+#   MHC-II: netmhciipan_ba (NetMHCIIpan 4.1 BA)
+# Two IEDB recommended methods were added in Sept 2023 (BA for binding, EL for elution/epitope).
+# Binding (BA) evaluates ability of a peptide to bind; EL also incorporates likelihood of
+# natural processing/presentation. BA was run for the primary screen (user-approved 2026-11-14).
+# EL may be used as a secondary sensitivity check after results are reviewed.
+mhci:
+  service: IEDB
+  method: netmhcpan_ba
+  version: "4.1"
+  method_call: netmhcpan_ba-4.1        # exact documented method-version string used in calls
+  endpoint: https://tools-cluster-interface.iedb.org/tools_api/mhci/
+  peptide_lengths: [8, 9, 10, 11]
+  alleles_submitted: [HLA-A*02:01, HLA-B*07:02, HLA-C*07:01, HLA-A*01:01, HLA-B*08:01]
+
+mhcii:
+  service: IEDB
+  method: netmhciipan_ba
+  version: "4.1"
+  method_call: netmhciipan_ba-4.1      # exact documented method-version string used in calls
+  endpoint: https://tools-cluster-interface.iedb.org/tools_api/mhcii/
+  peptide_lengths: "15"                # only 15-mers were needed for this study; IEDB range 11-30
+  alleles_panel:  [HLA-DRB1*01:01, HLA-DRB1*04:01, HLA-DRB1*07:01, HLA-DQB1*02:01, HLA-DQB1*03:01]
+  iedb_allele_mapping:                 # IEDB MHC-II accepts only alpha/beta chain pairs for DQ
+    HLA-DRB1*01:01: DRB1*01:01         # IEDB lists DRB1 alleles without the "HLA-" prefix
+    HLA-DRB1*04:01: DRB1*04:01
+    HLA-DRB1*07:01: DRB1*07:01
+    HLA-DQB1*02:01: DQA1*05:01/DQB1*02:01   # cis DQ2.5
+    HLA-DQB1*03:01: DQA1*03:01/DQB1*03:01   # cis DQ7
+  mapping_note: "Mapped and documented at run time (see docs/methodology.md D-12); panel alleles are unchanged."
+
+metadata:
+  retrieval_date: 2026-11-14
+  allele_panel: "config/hla_panel.csv"
+  config_note: >-
+    Prediction methods were EXECUTED 2026-11-14 on the full validated target set
+    (2 targets x 5 class-I alleles x lengths 8-11 = 7440 predictions; 2 targets x 5
+    class-II alleles at length 15 = 1805 predictions). Raw responses are preserved in
+    data/raw/iedb/ and per-call checksums in results/logs/. Outputs are computational
+    hypotheses only.

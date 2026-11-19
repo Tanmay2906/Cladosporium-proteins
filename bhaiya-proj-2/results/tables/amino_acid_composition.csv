@@ -1,0 +1,41 @@
+record_id,amino_acid,count,percent,reference_status
+PKS1,A,29,12.340426,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,C,4,1.702128,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,D,14,5.957447,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,E,14,5.957447,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,F,6,2.553191,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,G,24,10.212766,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,H,9,3.829787,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,I,8,3.404255,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,K,7,2.978723,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,L,26,11.06383,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,M,6,2.553191,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,N,6,2.553191,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,P,15,6.382979,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,Q,1,0.425532,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,R,14,5.957447,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,S,14,5.957447,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,T,11,4.680851,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,V,19,8.085106,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,W,3,1.276596,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+PKS1,Y,5,2.12766,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+SOD1REF,A,14,9.090909,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,C,2,1.298701,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,D,9,5.844156,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,E,8,5.194805,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,F,4,2.597403,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,G,24,15.584416,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,H,8,5.194805,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,I,7,4.545455,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,K,9,5.844156,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,L,4,2.597403,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,M,2,1.298701,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,N,12,7.792208,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,P,5,3.246753,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,Q,3,1.948052,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,R,5,3.246753,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,S,11,7.142857,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,T,13,8.441558,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,V,13,8.441558,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,W,1,0.649351,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"
+SOD1REF,Y,0,0.0,"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"

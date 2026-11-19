@@ -1,0 +1,23 @@
+# Population coverage intent (blueprint Part 9).
+# STATUS: not_evaluated — the IEDB population-coverage service is not scriptable
+# in this environment (legacy tools_api/population/ -> HTTP 403; nextgen
+# POST /pipeline -> HTTP 405). No frequencies were fetched; nothing below is
+# computed. This file records WHAT would be computed and with which inputs, so
+# the analysis can be rerun unchanged once service access exists.
+status: not_evaluated
+service: IEDB population coverage (tools.iedb.org/population/)
+probes:
+  - endpoint: "https://tools-cluster-interface.iedb.org/tools_api/population/"
+    result: "403 Forbidden (2026-11-14)"
+  - endpoint: "https://nextgen-tools.iedb.org/pipeline"
+    result: "405 Not Allowed (2026-11-14)"
+intended_input: results/tables/population_coverage_input.csv
+intended_output: results/tables/population_coverage_results.csv
+intended_figure: results/figures/population_coverage_summary.png
+blueprint_rule_applied: >-
+  Missing predictor output is never treated as a negative result; candidates
+  keep not_evaluated for this evidence category and are NOT excluded.
+populations_note: >-
+  Population/frequency dataset selection (e.g., allele frequencies per
+  population) could not be performed; no population names, frequencies or
+  coverage fractions are recorded anywhere in this project.

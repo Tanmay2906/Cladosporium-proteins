@@ -1,0 +1,33 @@
+# --- Python bytecode / caches ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+
+# --- Build artefacts / packaging ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- OS / editor noise ---
+.DS_Store
+
+# --- Logs ---
+# Pipeline logs (results/logs/) are regenerated on each run.
+*.log
+
+# --- NOTE: big reference downloads are NOT committed to git ---
+# Bulk reference proteomes (e.g. data/reference/c_sphaerospermum_ncbi_proteome.fasta,
+# ~25k residues / 324 records) and any future re-downloads should be fetched via
+# the retrieval manifest (data/manifests/retrieval_manifest.csv) and are ignored
+# here. Small curated raw inputs under data/raw/ and config/ ARE tracked.
+data/reference/*.fasta
+data/reference/*.fa
+data/reference/*.tsv

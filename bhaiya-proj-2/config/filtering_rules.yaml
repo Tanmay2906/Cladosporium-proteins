@@ -1,0 +1,41 @@
+# Filtering / decision rules for candidate prioritisation (blueprint Part 10).
+# Hierarchical rules, NOT a weighted composite score (blueprint Part 10 rule:
+# "Avoid arbitrary composite scores"). Rules are evaluated top-down; the first
+# matching rule decides. All rules were fixed BEFORE inspecting predictions
+# (documented in docs/methodology.md D-09).
+#
+# Thresholds follow IEDB-recommended BA interpretation:
+#   IC50 < 500 nM   -> binder (affinity tier)
+#   IC50 < 5000 nM  -> weak / review tier
+#   percentile_rank / rank <= 0.5 -> alternative rank-based rule (sensitivity only)
+thresholds:
+  binder_ic50_nM: 500
+  weak_ic50_nM: 5000
+  rank_percentile_cut: 0.5
+
+rules:
+  - id: RULE-01
+    when: "source_protein == SOD1REF"
+    decision: exclude_under_prespecified_rule
+    reason: "C. halotolerans A0AB34KRD1 reference homologue; REFERENCE_ONLY_NOT_C_sphaerospermum"
+  - id: RULE-02
+    when: "human_exact_match_count >= 1"
+    decision: exclude_under_prespecified_rule
+    reason: "exact match in human reviewed proteome (autoimmunity screen)"
+  - id: RULE-03
+    when: "no panel allele with IC50 < 500 nM (MHC-I or MHC-II)"
+    decision: review_required
+    reason: "insufficient evidence; NOT a negative result (missing/presence of evidence recorded)"
+  - id: RULE-04
+    when: "best IC50 < 5000 nM but no allele < 500 nM"
+    decision: retain_with_caveat
+    reason: "weak-tier binding only; insufficient for prioritisation"
+  - id: RULE-05
+    when: "at least one panel allele with IC50 < 500 nM"
+    decision: retain
+    reason: "binding evidence, no human exact match, reference-authentic target"
+
+never_negative: >-
+  Predictors that could not be executed (antigenicity/allergenicity/toxicity,
+  population coverage) are recorded as not_evaluated and can never exclude a
+  candidate or be reported as a negative result (blueprint Part 7 rule).

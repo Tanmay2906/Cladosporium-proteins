@@ -1,0 +1,14 @@
+# Python dependencies for the Cladosporium immunoinformatics pipeline.
+# Pinned to the versions verified in the project environment (2026-11).
+biopython==1.88
+pandas==3.1.1
+numpy==2.5.4
+requests==2.34.2
+pyyaml==6.0.3
+pytest==9.0.2
+
+# R dependencies note:
+# R (>= 4.3) with ggplot2, dplyr, readr is required for src/R/*.R figures and
+# workflows/run_analysis.R (verified 2026-11-14: R 4.4.2, ggplot2/dplyr/readr).
+# No other R packages are required or permitted; no install.packages() beyond
+# those three. Do not install R packages ad hoc inside this project.

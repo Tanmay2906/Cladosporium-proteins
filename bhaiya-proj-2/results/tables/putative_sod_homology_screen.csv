@@ -1,0 +1,2 @@
+accession,description,length,identity_pct,reference_coverage_pct,aligned_query_region,aligned_reference_region,aligned_columns,label
+NONE,no hits above threshold (identity>=30% AND reference coverage>=40% of 154-aa A0AB34KRD1 reference),,,,,,,no hits above threshold

@@ -1,0 +1,11 @@
+allele,class,locus,population_rationale,service,intended_query_status
+HLA-A*02:01,I,HLA-A,One of the most frequent HLA-A alleles in European and South Asian populations (documented in AFND); well-supported by IEDB predictors,IEDB population coverage,not_evaluated
+HLA-B*07:02,I,HLA-B,One of the most frequent HLA-B alleles in European and South Asian populations (documented in AFND); well-supported by IEDB predictors,IEDB population coverage,not_evaluated
+HLA-C*07:01,I,HLA-C,One of the most frequent HLA-C alleles in European and South Asian populations (documented in AFND); well-supported by IEDB predictors,IEDB population coverage,not_evaluated
+HLA-A*01:01,I,HLA-A,Common in European and South Asian populations; frequently used reference allele in epitope studies; supported by IEDB predictors,IEDB population coverage,not_evaluated
+HLA-B*08:01,I,HLA-B,Common in European and South Asian populations; frequently used reference allele in epitope studies; supported by IEDB predictors,IEDB population coverage,not_evaluated
+HLA-DRB1*01:01,II,HLA-DR,One of the most frequent HLA-DRB1 alleles in European and South Asian populations (documented in AFND); well-supported by IEDB predictors,IEDB population coverage,not_evaluated
+HLA-DRB1*04:01,II,HLA-DR,One of the most frequent HLA-DRB1 alleles in European and South Asian populations (documented in AFND); well-supported by IEDB predictors,IEDB population coverage,not_evaluated
+HLA-DRB1*07:01,II,HLA-DR,One of the most frequent HLA-DRB1 alleles in European and South Asian populations (documented in AFND); well-supported by IEDB predictors,IEDB population coverage,not_evaluated
+HLA-DQB1*02:01,II,HLA-DQ,One of the most frequent HLA-DQB1 alleles in European and South Asian populations (documented in AFND); well-supported by IEDB predictors,IEDB population coverage,not_evaluated
+HLA-DQB1*03:01,II,HLA-DQ,One of the most frequent HLA-DQB1 alleles in European and South Asian populations (documented in AFND); well-supported by IEDB predictors,IEDB population coverage,not_evaluated

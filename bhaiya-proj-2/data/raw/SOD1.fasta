@@ -1,0 +1,7 @@
+# SOD1 was NOT verified for Cladosporium sphaerospermum (NCBI esearch count=0 for SOD1/superoxide/dismutase with Organism="Cladosporium sphaerospermum"; no UniProt entry found).
+# The UniProtKB TrEMBL entry below is the closest Cladosporium-genus homologue, from Cladosporium halotolerans (strain TM138-S3), included ONLY as a reference; it is NOT a verified C. sphaerospermum target and must not be treated as one.
+# Reference: UniProtKB accession A0AB34KRD1 (entryVersion 7, sequenceVersion 1); gene sod1; orf WHR41_05553; EMBL KAL1586176.1; taxon 1052096.
+>sp|A0AB34KRD1|A0AB34KRD1_9PEZI Superoxide dismutase [Cu-Zn] OS=Cladosporium halotolerans OX=1052096 GN=sod1 PE=3 SV=1 (REFERENCE HOMOLOGUE; not C. sphaerospermum)
+MVKAVAVIRGDSNVKGTVTFEQASEAAETTISWNVSGNDANAERGMHIHTFGDNTNGCTS
+AGPHFNPHNKTHGAPSDSERHVGDLGNFKTDGQGNATGSVADKHIKLIGPESVLGRTVVV
+HAGTDDLGKGGNEESKKTGNAGGRPACGVIGISQ

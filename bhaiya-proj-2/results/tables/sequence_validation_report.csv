@@ -1,0 +1,3 @@
+record,record_id,length,invalid_symbols,duplicate_count,is_valid,sha256,source_file,reference_status
+PKS1,QBZ73626.1,235,,0,True,f70f60d0cbb25ccc6980a2689271fc88f532d9705dfaf2b490d47014ce42f43c,data/raw/PKS1.fasta,C_sphaerospermum_verified_QBZ73626.1_partial_typeIII_PKS
+SOD1REF,sp|A0AB34KRD1|A0AB34KRD1_9PEZI,154,,0,True,ca2ff2b0dba341bac4ee0ef9dd26f85998b61ea28dc21f4fe4f9e177ae1dc97b,data/raw/SOD1.fasta (validated via data/processed/SOD1_comments_stripped.fasta; leading # comments stripped because stock Biopython fasta parser rejects them; sequence unchanged),"REFERENCE_ONLY_NOT_C_sphaerospermum (UniProt A0AB34KRD1, C. halotolerans)"

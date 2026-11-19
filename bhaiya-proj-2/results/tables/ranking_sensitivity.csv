@@ -1,0 +1,9 @@
+scenario,rule,retained_candidates,jaccard_vs_PRIMARY_retained,overlap_with_PRIMARY,jaccard_top25_vs_PRIMARY
+PRIMARY,"IC50 < 500 nM, full 10-allele panel, MHC-I+MHC-II",176,1.0,176,1.0
+STRICT,"IC50 < 50 nM, full panel, MHC-I+MHC-II",33,0.1875,33,1.0
+LENIENT,"IC50 < 5000 nM, full panel, MHC-I+MHC-II",378,0.4656,176,1.0
+RANK05,"percentile/rank <= 0.5, full panel, MHC-I+MHC-II",35,0.153,28,0.3158
+NO_DQ,"IC50 < 500 nM, DQ alleles removed",159,0.9034,159,1.0
+NO_DRB101,"IC50 < 500 nM, DRB1*01:01 removed",176,1.0,176,1.0
+CLASS_I_ONLY,"IC50 < 500 nM, MHC-I evidence only",42,0.2386,42,0.25
+CLASS_II_ONLY,"IC50 < 500 nM, MHC-II evidence only",134,0.7614,134,0.4286

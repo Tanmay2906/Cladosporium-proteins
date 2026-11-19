@@ -1,0 +1,22 @@
+Human proteome provenance manifest
+=================================
+
+source: UniProtKB/Swiss-Prot (reviewed human reference proteome, Homo sapiens)
+release: 2026_04 (release date 2026-11-04; API deployment 2026-11-10)
+retrieval_date: 2026-11-14
+url: https://rest.uniprot.org/uniprotkb/stream?query=organism_id:9606+AND+reviewed:true&format=fasta
+file_path: data/reference/human_proteome.fasta
+file_bytes: 13670961
+records: 20429 canonical reviewed sequences
+uncompressed_size_bytes: 13670961
+sha256: 13852e174364bf1c705206c38eacae57210f5bca9955f05be6b4ff48f727d37b
+md5: 3064f6cbf0e881570a2663b5a838f2ff
+gzip_sha256_deterministic: e80a300628162d7296a594afc95c32541be8c9e1ba788c1229ccbda17746a433
+notes:
+  - This file is a provenance manifest only. NO protein sequences are stored here.
+  - data/reference/human_proteome.fasta is the authoritative local copy (retrieved 2026-11-14 via UniProtKB REST).
+  - Record used for whole-protein and peptide-level similarity screening; 25 UniProt records contain selenocysteine (U); handled in-memory only.
+  - The "~54k human proteins" expectation in the project brief does not apply to reviewed Swiss-Prot (expected denominator = 20429); documented downstream in file headers.
+  - UniProt licensing: sequences are CC BY 4.0; redistribution should follow UniProt license terms and attribution.
+
+status: RETRIEVED (2026-11-14)

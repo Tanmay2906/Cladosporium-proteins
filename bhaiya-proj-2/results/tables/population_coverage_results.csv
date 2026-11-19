@@ -1,0 +1,2 @@
+analysis,status,reason,retrieval_date,raw_response_path,sha256
+population_coverage,not_evaluated,"IEDB population-coverage service not scriptable in this environment (legacy tools_api/population/ -> HTTP 403; nextgen POST /pipeline -> HTTP 405, probed 2026-11-14). Blueprint rule applied: missing output is never treated as a negative result and no coverage values are fabricated.",,,
